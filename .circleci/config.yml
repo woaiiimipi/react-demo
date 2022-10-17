@@ -25,7 +25,7 @@ jobs:
           command: "git branch"
       - run: 
           name: "Create File"
-          command: "cd public && touch test.json && git add . && git commit -m 'version changed' && git push origin main"
+          command: "git config --global user.email 'version-rebot@next.com' && git config --global user.name 'Rebot' && cd public && touch test.json && git add . && git commit -m 'version changed' && git push origin main"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
