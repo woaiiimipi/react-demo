@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run:
-            name: "expect version"
+            name: "Expect Version"
             command: "expect -v"
       # - run: 
       #     name: "Build"
