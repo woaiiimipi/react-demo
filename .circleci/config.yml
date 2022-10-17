@@ -22,7 +22,7 @@ jobs:
       #     command: "git config --global user.email 'version-rebot@next.com' && git config --global user.name 'Rebot' && cd public && date > version.txt && git add . && git commit -m 'version changed' && git push origin main"
       - run: 
           name: "Deploy"
-          command: "sudo apt install expect && expect -v && expect -c 'spawn scp -o StrictHostKeyChecking=no -r public root@47.100.179.181:/usr/share/nginx/html/react-demo/public; expect password; send 'Qiongjie123123\n'; interact'"
+          command: "sudo apt install expect=5.45 && expect -v && expect -c 'spawn scp -o StrictHostKeyChecking=no -r public root@47.100.179.181:/usr/share/nginx/html/react-demo/public; expect password; send 'Qiongjie123123\n'; interact'"
       
 
 # Invoke jobs via workflows
