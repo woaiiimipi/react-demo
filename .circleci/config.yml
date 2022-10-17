@@ -14,9 +14,6 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-            name: "Expect Version"
-            command: "expect -v"
       # - run: 
       #     name: "Build"
       #     command: "git config --global user.email 'version-rebot@next.com' && git config --global user.name 'Rebot' && cd public && date > version.txt && git add . && git commit -m 'version changed' && git push origin main"
