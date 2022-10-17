@@ -14,9 +14,9 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - run: 
-          name: "Build"
-          command: "git config --global user.email 'version-rebot@next.com' && git config --global user.name 'Rebot' && cd public && date > version.txt && git add . && git commit -m 'version changed' && git push origin main"
+      # - run: 
+      #     name: "Build"
+      #     command: "git config --global user.email 'version-rebot@next.com' && git config --global user.name 'Rebot' && cd public && date > version.txt && git add . && git commit -m 'version changed' && git push origin main"
       - run: 
           name: "Deploy"
           command: "scp -r public root@47.100.179.181:/usr/share/nginx/html/react-demo/public -y"
