@@ -25,7 +25,7 @@ jobs:
           command: "git branch"
       - run: 
           name: "Show Node Version"
-          command: "node -v"
+          command: "date"
       - run: 
           name: "Create File"
           command: "git config --global user.email 'version-rebot@next.com' && git config --global user.name 'Rebot' && cd public && touch test.json && git add . && git commit -m 'version changed' && git push origin main"
