@@ -25,7 +25,7 @@ jobs:
           command: "git branch"
       - run: 
           name: "Create File"
-          command: "cd public"
+          command: "cd public && ls -l"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
